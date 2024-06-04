@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Slot, Slottable } from '@/app/src/components/slot/Slot';
+import { Slot, Slottable } from '@/app/react/components/slot/Slot';
 
 interface ButtonProps {
 	asChild?: boolean;
