@@ -1,15 +1,15 @@
 import * as React from 'react';
 
-import type * as Radix from '../primitive/src';
+import type * as Radix from '../../primitive/src';
 
-import { useComposedRefs } from '../composeRefs/src';
-import { Scope, createContextScope } from '../context/src';
+import { useComposedRefs } from '../../composeRefs/src';
+import { Scope, createContextScope } from '../../context/src';
 import { composeEventHandlers } from '@/app/core/primitive';
-import { useControllableState } from '../use-controllable-state/src';
-import { usePrevious } from '../use-previous/src';
-import { useSize } from '../use-size/src';
-import { Presence } from '../presence/src';
-import { Primitive } from '../primitive/src';
+import { useControllableState } from '../../use-controllable-state/src';
+import { usePrevious } from '../../use-previous/src';
+import { useSize } from '../../use-size/src';
+import { Presence } from '../../presence/src';
+import { Primitive } from '../../primitive/src';
 
 /* -------------------------------------------------------------------------------------------------
  * Checkbox

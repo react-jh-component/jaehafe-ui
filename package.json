@@ -1,25 +1,26 @@
 {
-  "name": "components",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 8080",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.2.3",
-    "prettier": "^3.3.0",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "typescript": "^5"
-  }
+	"name": "components",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 8080",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"types:check": "tsc --skipLibCheck --noEmit"
+	},
+	"dependencies": {
+		"next": "14.2.3",
+		"prettier": "^3.3.0",
+		"react": "^18",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.3",
+		"typescript": "^5"
+	}
 }
