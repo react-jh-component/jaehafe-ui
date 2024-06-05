@@ -8,13 +8,13 @@ type PossibleRef<T> = React.Ref<T> | undefined;
  */
 function setRef<T>(ref: PossibleRef<T>, value: T) {
 	if (typeof ref === 'function') {
-		console.log('ref(value)>>', ref(value));
+		// console.log('ref(value)>>', ref(value));
 		ref(value);
 	} else if (ref !== null && ref !== undefined) {
-		console.log('value>>', value);
+		// console.log('value>>', value);
 		(ref as React.MutableRefObject<T>).current = value;
 
-		console.log('ref.current>>', (ref as React.MutableRefObject<T>).current);
+		// console.log('ref.current>>', (ref as React.MutableRefObject<T>).current);
 	}
 }
 
@@ -23,13 +23,13 @@ function setRef<T>(ref: PossibleRef<T>, value: T) {
  * Accepts callback refs and RefObject(s)
  */
 function composeRefs<T>(...refs: PossibleRef<T>[]) {
-	console.log('refs>>>!!!!', refs);
+	// console.log('refs>>>!!!!', refs);
 
 	return (node: T) => {
-		console.log('node>>', node);
+		// console.log('node>>', node);
 
 		refs.forEach(ref => {
-			console.log('ref>>', ref);
+			// console.log('ref>>', ref);
 
 			return setRef(ref, node);
 		});

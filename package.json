@@ -10,6 +10,7 @@
 		"types:check": "tsc --skipLibCheck --noEmit"
 	},
 	"dependencies": {
+		"lucide-react": "^0.383.0",
 		"next": "14.2.3",
 		"prettier": "^3.3.0",
 		"react": "^18",
